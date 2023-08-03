@@ -1,10 +1,6 @@
 #include <stdio.h>
 #include <math.h>
 
-float addition(int numbers[],int size);
-float subtraction(int numbers[], int size);
-float multiplication(int numbers[], int size);
-float division(int numbers[], int size);
 
 int main(){
     int size, choice;
