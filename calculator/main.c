@@ -36,7 +36,7 @@ int main(){
             if(numbers[i] != 0 )
                 sum /= numbers[i];
             else{
-                printf("You can't divide a number by 0");
+                printf("You can't divide a number by 0!");
                 return 1;
             }    
         }    
