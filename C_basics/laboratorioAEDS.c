@@ -79,6 +79,7 @@ int main(void)
         return 1;
     Preencher(array, 10);
     Inserir(array, 99,2);
+    Imprime(array);
 
     int elemento = Mostrar(array, 2);
     if (elemento != -1)
