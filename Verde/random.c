@@ -2,6 +2,13 @@
 #include <string.h>
 #include <stdbool.h>
 #include <stdlib.h>
+/*aça
+acaçç
+Ada
+afç
+aia
+ala
+ama*/
 
 bool isFim(char str[])
 {
@@ -29,9 +36,9 @@ int main()
         if (isFim(str))
             break;
         else{
-
-            char letra1 = 'a' + rand() % 26;
-            char letra2 = 'a' + rand() % 26;
+            int numAleatorio = rand() % 26;
+            char letra1 = 'a' + numAleatorio;
+            char letra2 = 'a' + numAleatorio;
 
             for (int i = 0; i < strlen(str); i++)
             {

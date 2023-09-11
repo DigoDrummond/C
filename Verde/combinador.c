@@ -5,30 +5,22 @@ int main()
 {
     char str1[50];
     char str2[50];
-    char c = getchar();
-    while (c != EOF)
-    { // le ate final do txt
-        str1[0] = c;
-        scanf("%s", str1 + 1);
-        scanf("%s", str2);
-        c = getchar();
-        c = getchar();
-        int i = 0;
-        int j = 0;
-        int k = 0;
-        char resultado[strlen(str1) + strlen(str2)];
-        while (i < strlen(str1) || j < strlen(str2))
-        {
-            if (i < strlen(str1))
-                resultado[k++] = str1[i++];
-            if (j < strlen(str2))
-                resultado[k++] = str2[j++];
-        }
-        resultado[k] = '\0';
-        for (int i = 0; i < strlen(resultado); i++)
-        {
-            printf("%c", resultado[i]);
-        }
-        printf("\n");
+    scanf("%s %s", str1, str2);
+    int i = 0;
+    int j = 0;
+    int k = 0;
+    char resultado[strlen(str1) + strlen(str2)];
+    while (i < strlen(str1) || j < strlen(str2))
+    {
+        if (i < strlen(str1))
+            resultado[k++] = str1[i++];
+        if (j < strlen(str2))
+            resultado[k++] = str2[j++];
     }
+    resultado[k] = '\0';
+    for (int i = 0; i < strlen(resultado); i++)
+    {
+        printf("%c", resultado[i]);
+    }
+    printf("\n");
 }
