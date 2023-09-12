@@ -117,5 +117,7 @@ int main()
 
     show(q);
 
+    destroy(q);
+
     return 0;
 }
