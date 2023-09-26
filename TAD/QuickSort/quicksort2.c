@@ -3,7 +3,6 @@
 
 void quicksort(int array[], int esq, int dir);
 void swap(int array[], int i, int j);
-
 int main()
 {
     int n = 16;
